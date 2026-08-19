@@ -15,6 +15,17 @@ body {
     min-height: 100vh;
 }
 
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: -1;
+}
+
 /* CARTAS */
 .carta {
     width: 80%;
@@ -52,42 +63,43 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     flex-wrap: wrap;
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 /* BOTONES */
 .btn-principal {
     display: inline-block;
-    padding: 10px 24px;
+    padding: 10px 22px;
     border-radius: 25px !important;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.88);
     color: #000000;
     font-family: 'Noto Serif', serif;
     font-weight: 700;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     text-decoration: none;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     text-align: center;
-    transition: background 0.2s ease;
+    transition: background 0.2s ease, transform 0.15s;
 }
 
 .btn-principal:hover {
     background: #ffffff;
+    transform: translateY(-1px);
 }
 
 .btn-secundario {
     display: inline-block;
-    padding: 10px 24px;
+    padding: 10px 22px;
     border-radius: 25px !important;
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     color: #ccc;
     font-family: 'Noto Serif', serif;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -98,6 +110,28 @@ body {
     color: #fff;
 }
 
+.btn-descarga {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 20px !important;
+    background: rgba(76, 175, 80, 0.15);
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    color: #a5d6a7;
+    font-family: 'Noto Serif', serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-descarga:hover {
+    background: rgba(76, 175, 80, 0.25);
+    color: #c8e6c9;
+}
+
 /* SECCIONES DE CONTENIDO */
 .seccion-contenido h2 {
     color: #ffffff;
@@ -106,7 +140,7 @@ body {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 16px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     padding-bottom: 10px;
 }
 
@@ -199,12 +233,18 @@ body {
     text-align: right;
 }
 
-/* CONCURSOS */
+/* CONCURSOS - GRID 2 COLUMNAS */
 .lista-concursos {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 12px;
     margin-top: 8px;
+}
+
+.lista-concursos .concurso-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    justify-self: center;
 }
 
 .concurso-item {
@@ -212,11 +252,14 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 16px 20px;
-    transition: background 0.2s;
+    transition: background 0.2s, transform 0.15s;
+    display: flex;
+    flex-direction: column;
 }
 
 .concurso-item:hover {
     background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
 }
 
 .concurso-item h3 {
@@ -228,16 +271,24 @@ body {
 }
 
 .concurso-item p {
-    font-size: 0.85rem;
+    font-size: 0.83rem;
     color: #bbb;
     line-height: 1.5;
     text-align: left;
     margin: 0;
+    flex: 1;
 }
 
 .concurso-item em {
     color: #888;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
+}
+
+.concurso-bases {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 /* CENTROS DE INVESTIGACIÓN */
@@ -350,21 +401,20 @@ body {
     margin-top: 2px;
 }
 
-.acciones-inscripcion {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 24px;
-}
-
-/* NOTA PRECIO */
 .nota-precio {
     font-size: 0.8rem !important;
     color: #999 !important;
     font-style: italic;
     margin-top: 12px !important;
     text-align: center !important;
+}
+
+.acciones-inscripcion {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
 }
 
 /* REDES SOCIALES */
@@ -446,6 +496,44 @@ body {
     text-decoration: underline;
 }
 
+/* BASES / DESCARGAS */
+.bases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.base-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.base-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.base-item h3 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.base-item p {
+    font-size: 0.78rem;
+    color: #999;
+    margin-bottom: 12px;
+}
+
 /* FOOTER */
 .carta-footer {
     width: 80%;
@@ -476,6 +564,16 @@ body {
     font-weight: 600;
 }
 
+.footer-links a {
+    color: #a5d6a7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 .footer-redes {
     display: flex;
     justify-content: center;
@@ -492,16 +590,6 @@ body {
 
 .footer-redes a:hover {
     color: #a5d6a7;
-}
-
-.footer-links a {
-    color: #a5d6a7;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
 }
 
 /* SCROLLBAR */
@@ -540,6 +628,12 @@ html {
 }
 
 @media (max-width: 640px) {
+    .lista-concursos {
+        grid-template-columns: 1fr;
+    }
+    .lista-concursos .concurso-item:last-child:nth-child(odd) {
+        max-width: 100%;
+    }
     .fecha-item {
         flex-direction: column;
         text-align: center;
@@ -555,5 +649,8 @@ html {
     }
     .bloques-precios {
         flex-direction: column;
+    }
+    .bases-grid {
+        grid-template-columns: 1fr;
     }
 }
