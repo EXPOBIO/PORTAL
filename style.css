@@ -358,6 +358,46 @@ body {
     margin-top: 24px;
 }
 
+/* FAQ */
+.faq-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+}
+
+.faq-item h3 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    font-size: 0.85rem;
+    color: #bbb;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+}
+
+.faq-item a {
+    color: #a5d6a7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+
 /* FOOTER */
 .carta-footer {
     width: 80%;
