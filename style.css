@@ -358,6 +358,54 @@ body {
     margin-top: 24px;
 }
 
+/* NOTA PRECIO */
+.nota-precio {
+    font-size: 0.8rem !important;
+    color: #999 !important;
+    font-style: italic;
+    margin-top: 12px !important;
+    text-align: center !important;
+}
+
+/* REDES SOCIALES */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.red-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 14px 24px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.2s;
+    min-width: 140px;
+}
+
+.red-social:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.red-icono {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.red-nombre {
+    font-size: 0.78rem;
+    color: #a5d6a7;
+}
+
 /* FAQ */
 .faq-lista {
     display: flex;
@@ -421,6 +469,29 @@ body {
     font-size: 0.78rem;
     color: #777;
     margin-bottom: 6px;
+}
+
+.footer-contacto {
+    color: #a5d6a7 !important;
+    font-weight: 600;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.footer-redes a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.78rem;
+    transition: color 0.2s;
+}
+
+.footer-redes a:hover {
+    color: #a5d6a7;
 }
 
 .footer-links a {
