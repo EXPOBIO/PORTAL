@@ -1,0 +1,19 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependencias
+node_modules/
+
+# Archivos de construcción
+dist/
+build/
+
+# Logs
+*.log

@@ -1,0 +1,73 @@
+{
+  "evento": {
+    "nombre": "EXPOBIO 2026",
+    "fecha": "2026-08-18",
+    "lugar": "Universidad Nacional San Antonio Abad del Cusco",
+    "descripcion": "Expo de Biología - Evento académico y científico"
+  },
+  "concursos": [
+    {
+      "id": 1,
+      "nombre": "Investigación",
+      "descripcion": "Proyectos de investigación científica",
+      "categorias": ["Ciencias Biológicas", "Medicina", "Agronomía"]
+    },
+    {
+      "id": 2,
+      "nombre": "Resúmenes",
+      "descripcion": "Resúmenes de investigaciones",
+      "categorias": ["Investigación Básica", "Investigación Aplicada"]
+    },
+    {
+      "id": 3,
+      "nombre": "Poster Científico",
+      "descripcion": "Presentación de pósters científicos",
+      "categorias": ["Graduada", "Estudiantil"]
+    }
+  ],
+  "programacion": [
+    {
+      "dia": "Viernes 18 de Agosto",
+      "actividades": [
+        {
+          "hora": "08:00 - 09:00",
+          "actividad": "Registro y bienvenida"
+        },
+        {
+          "hora": "09:00 - 10:30",
+          "actividad": "Inauguración oficial"
+        },
+        {
+          "hora": "10:30 - 12:30",
+          "actividad": "Conferencias magistrales"
+        },
+        {
+          "hora": "14:00 - 16:00",
+          "actividad": "Presentación de trabajos"
+        }
+      ]
+    },
+    {
+      "dia": "Sábado 19 de Agosto",
+      "actividades": [
+        {
+          "hora": "09:00 - 11:00",
+          "actividad": "Talleres prácticos"
+        },
+        {
+          "hora": "11:00 - 13:00",
+          "actividad": "Mesas redondas"
+        },
+        {
+          "hora": "14:00 - 16:00",
+          "actividad": "Premiación y clausura"
+        }
+      ]
+    }
+  ],
+  "enlaces": {
+    "inscripcion": "https://expobio.github.io/INSCRIPCION/",
+    "consultas": "https://expobio.github.io/CONSULTAS/",
+    "guia_pago": "https://expobio.github.io/INSCRIPCION/guia.html"
+  }
+}

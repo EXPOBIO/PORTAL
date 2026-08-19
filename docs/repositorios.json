@@ -1,0 +1,29 @@
+{
+  "repositorios": {
+    "portal": {
+      "nombre": "PORTAL",
+      "url": "git@github.com:EXPOBIO/PORTAL.git",
+      "descripcion": "Portal web centralizado para la EXPOBIO 2026",
+      "estado": "activo"
+    },
+    "inscripcion": {
+      "nombre": "INSCRIPCION",
+      "url": "git@github.com:EXPOBIO/INSCRIPCION.git",
+      "descripcion": "Formularios de inscripción y pagos",
+      "estado": "activo",
+      "referencial": true
+    },
+    "consultas": {
+      "nombre": "CONSULTAS",
+      "url": "https://expobio.github.io/CONSULTAS/",
+      "descripcion": "Portal de resolución de dudas",
+      "estado": "futuro"
+    }
+  },
+  "enlaces": {
+    "portal": "https://EXPOBIO.github.io/PORTAL/",
+    "inscripcion": "https://expobio.github.io/INSCRIPCION/",
+    "consultas": "https://expobio.github.io/CONSULTAS/",
+    "guia_pago": "https://expobio.github.io/INSCRIPCION/guia.html"
+  }
+}

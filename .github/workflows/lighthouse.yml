@@ -1,0 +1,24 @@
+# Lighthouse para PORTAL EXPOBIO
+# Auditoría de rendimiento y accesibilidad
+
+name: Lighthouse
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Run Lighthouse
+        uses: treosh/lighthouse-ci-action@v9
+        with:
+          urls: |
+            https://EXPOBIO.github.io/PORTAL/
+          configPath: ./lighthouserc.json
+          uploadArtifacts: true
