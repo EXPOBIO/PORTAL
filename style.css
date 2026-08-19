@@ -1,10 +1,4 @@
-/* GENERAL */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* GENERAL / BODY */
 body {
     background-image: url(biologia-unsaac.jpeg);
     background-repeat: no-repeat;
@@ -12,100 +6,91 @@ body {
     background-attachment: fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
-    color: #ffffff;
-    min-height: 100vh;
-}
-
-/* CONTENEDOR */
-.contenedor {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* HERO / PORTADA */
-.hero {
-    text-align: center;
-    padding: 60px 20px 50px;
-    background: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    min-height: 100vh;
 }
 
-.hero .escudo {
-    width: 120px;
+/* CARTAS */
+.carta {
+    width: 80%;
+    max-width: 1100px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border-radius: 50px;
+    color: #ffffff;
+}
+
+/* HEADER - LOGO GRANDE */
+.box-titulo {
+    text-align: center;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+}
+
+.escudo-banner {
+    width: 100%;
     max-width: 100%;
     height: auto;
-    margin-bottom: 18px;
+    object-fit: contain;
+    display: block;
 }
 
-.hero h1 {
-    font-family: sans-serif;
-    font-weight: 900;
-    font-size: 2.6rem;
-    letter-spacing: 2px;
-    margin-bottom: 6px;
-}
-
-.hero-sub {
-    font-family: 'Noto Serif', serif;
-    font-size: 1.15rem;
-    color: #FFEB3B;
-    margin-bottom: 20px;
-}
-
-.hero-fecha {
-    font-family: 'Noto Serif', serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-
-.hero-lugar {
-    font-size: 0.95rem;
-    color: #ccc;
-    margin-bottom: 28px;
-}
-
-.hero-botones {
+/* ACCIONES RÁPIDAS */
+.acciones-rapidas {
     display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 10px 0;
 }
 
 /* BOTONES */
 .btn-principal {
     display: inline-block;
-    padding: 13px 32px;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, 0.9);
-    color: #000;
+    padding: 10px 24px;
+    border-radius: 25px !important;
+    background: rgba(255, 255, 255, 0.85);
+    color: #000000;
     font-family: 'Noto Serif', serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.95rem;
     text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    transition: background 0.2s, transform 0.15s;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: background 0.2s ease;
 }
 
 .btn-principal:hover {
     background: #ffffff;
-    transform: translateY(-1px);
 }
 
 .btn-secundario {
     display: inline-block;
-    padding: 13px 32px;
-    border-radius: 25px;
+    padding: 10px 24px;
+    border-radius: 25px !important;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.4);
     color: #ccc;
     font-family: 'Noto Serif', serif;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-decoration: none;
-    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .btn-secundario:hover {
@@ -113,249 +98,288 @@ body {
     color: #fff;
 }
 
-/* SECCIONES */
-.seccion {
-    padding: 48px 20px;
-}
-
-.seccion-oscuro {
-    background: rgba(0, 0, 0, 0.65);
-}
-
-.seccion-titulo {
+/* SECCIONES DE CONTENIDO */
+.seccion-contenido h2 {
+    color: #ffffff;
     font-family: sans-serif;
     font-weight: 900;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 20px;
-    border-bottom: 2px solid rgba(76, 175, 80, 0.5);
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     padding-bottom: 10px;
 }
 
-.seccion-texto {
+.seccion-contenido p {
     font-family: 'Noto Serif', serif;
-    font-size: 0.98rem;
+    font-size: 0.92rem;
     line-height: 1.7;
-    color: #e0e0e0;
+    color: #d0d0d0;
     text-align: center;
     max-width: 700px;
-    margin: 0 auto 14px;
+    margin: 0 auto 12px;
 }
 
-/* FECHAS CLAVE */
-.grid-fechas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 14px;
-    margin-top: 24px;
+.seccion-desc {
+    margin-bottom: 20px !important;
 }
 
-.tarjeta-fecha {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 14px;
-    padding: 18px 16px;
-    text-align: center;
-    transition: background 0.2s;
-}
-
-.tarjeta-fecha:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.tarjeta-fecha.destacada {
-    background: rgba(76, 175, 80, 0.15);
-    border-color: rgba(76, 175, 80, 0.4);
-}
-
-.fecha-dia {
-    display: block;
-    font-family: sans-serif;
-    font-weight: 900;
-    font-size: 1.3rem;
-    color: #a5d6a7;
-    margin-bottom: 6px;
-}
-
-.tarjeta-fecha.destacada .fecha-dia {
-    color: #4CAF50;
-    font-size: 1.5rem;
-}
-
-.fecha-label {
-    display: block;
-    font-size: 0.82rem;
-    color: #bbb;
-    line-height: 1.4;
-}
-
-/* CONCURSOS */
-.grid-concursos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 16px;
-    margin-top: 24px;
-}
-
-.tarjeta-concurso {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 14px;
-    padding: 24px 20px;
-    text-align: center;
-    transition: background 0.2s, transform 0.15s;
-}
-
-.tarjeta-concurso:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-}
-
-.concurso-icono {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-}
-
-.tarjeta-concurso h3 {
-    font-family: sans-serif;
-    font-weight: 700;
-    font-size: 1.05rem;
-    margin-bottom: 8px;
-    color: #fff;
-}
-
-.tarjeta-concurso p {
-    font-size: 0.85rem;
-    color: #bbb;
-    line-height: 1.5;
-}
-
-/* CENTROS DE INVESTIGACIÓN */
-.grid-centros {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin: 24px 0;
-}
-
-.centro-item {
-    background: rgba(76, 175, 80, 0.15);
-    border: 1px solid rgba(76, 175, 80, 0.3);
-    border-radius: 20px;
-    padding: 8px 18px;
-    font-family: sans-serif;
-    font-weight: 700;
-    font-size: 0.82rem;
-    letter-spacing: 0.03em;
-    color: #a5d6a7;
-}
-
-.programacion-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    margin-top: 24px;
-}
-
-.programacion-dia {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 18px 14px;
-    text-align: center;
-}
-
-.programacion-dia h3 {
-    font-family: sans-serif;
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: #a5d6a7;
-    margin-bottom: 10px;
-}
-
-.programacion-dia p {
-    font-size: 0.82rem;
-    color: #ccc;
-    margin-bottom: 4px;
-}
-
-/* PRECIOS */
-.tarjeta-precios {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 16px;
-    margin-top: 24px;
-}
-
-.precio-grupo {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 14px;
-    padding: 22px 20px;
-}
-
-.precio-grupo h3 {
-    font-family: 'Noto Serif', serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #a5d6a7;
-    margin-bottom: 16px;
-    text-align: center;
-}
-
-.precios-flex {
+/* DATOS DEL EVENTO */
+.datos-evento {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 24px;
     flex-wrap: wrap;
 }
 
-.precio-item {
+.dato-item {
     text-align: center;
 }
 
-.precio-monto {
+.dato-num {
     display: block;
     font-family: sans-serif;
     font-weight: 900;
-    font-size: 1.6rem;
-    color: #fff;
+    font-size: 2rem;
+    color: #ffffff;
 }
 
-.precio-desc {
+.dato-label {
     display: block;
     font-size: 0.78rem;
     color: #999;
     margin-top: 2px;
 }
 
-.acciones-inscripcion {
+/* FECHAS CLAVE */
+.lista-fechas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.fecha-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 12px 18px;
+    gap: 12px;
+    transition: background 0.2s;
+}
+
+.fecha-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.fecha-destacada {
+    background: rgba(76, 175, 80, 0.12);
+    border-color: rgba(76, 175, 80, 0.3);
+}
+
+.fecha-fecha {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.fecha-destacada .fecha-fecha {
+    color: #a5d6a7;
+}
+
+.fecha-texto {
+    font-size: 0.82rem;
+    color: #aaa;
+    text-align: right;
+}
+
+/* CONCURSOS */
+.lista-concursos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.concurso-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+    transition: background 0.2s;
+}
+
+.concurso-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.concurso-item h3 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.concurso-item p {
+    font-size: 0.85rem;
+    color: #bbb;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+}
+
+.concurso-item em {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+/* CENTROS DE INVESTIGACIÓN */
+.lista-centros {
     display: flex;
     gap: 14px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.centro-dia {
+    flex: 1;
+    min-width: 220px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+}
+
+.centro-dia h3 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.centro-tag {
+    display: inline-block;
+    background: rgba(76, 175, 80, 0.12);
+    border: 1px solid rgba(76, 175, 80, 0.25);
+    border-radius: 16px;
+    padding: 5px 14px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: #a5d6a7;
+    margin: 3px;
+    letter-spacing: 0.03em;
+}
+
+.centro-label-mono {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* PRECIOS */
+.bloques-precios {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bloque-precio {
+    flex: 1;
+    min-width: 260px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.bloque-precio h3 {
+    font-family: 'Noto Serif', serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.bloque-precio h3 span {
+    font-weight: 400;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.precio-opciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.opcion-precio {
+    text-align: center;
+}
+
+.monto {
+    display: block;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.detalle {
+    display: block;
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 2px;
+}
+
+.acciones-inscripcion {
+    display: flex;
+    gap: 12px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 28px;
+    margin-top: 24px;
 }
 
 /* FOOTER */
-.footer {
+.carta-footer {
+    width: 80%;
+    max-width: 1100px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 24px 18px;
+    border-radius: 50px;
     text-align: center;
-    padding: 36px 20px;
-    background: rgba(0, 0, 0, 0.8);
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #ffffff;
 }
 
-.footer-logo {
-    width: 60px;
+.footer-escudo {
+    width: 50px;
     height: auto;
-    opacity: 0.7;
-    margin-bottom: 12px;
+    opacity: 0.6;
+    margin-bottom: 10px;
 }
 
-.footer p {
-    font-size: 0.82rem;
-    color: #888;
+.carta-footer p {
+    font-size: 0.78rem;
+    color: #777;
     margin-bottom: 6px;
 }
 
@@ -377,6 +401,7 @@ html {
 
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -389,21 +414,35 @@ html {
     border: 2px solid rgba(0, 0, 0, 0.35);
 }
 
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #c8e6c9, #66BB6A);
+}
+
 /* RESPONSIVE */
+@media (min-width: 768px) {
+    .carta {
+        width: 70%;
+    }
+    .carta-footer {
+        width: 70%;
+    }
+}
+
 @media (max-width: 640px) {
-    .hero h1 {
-        font-size: 1.9rem;
+    .fecha-item {
+        flex-direction: column;
+        text-align: center;
     }
-    .hero-fecha {
-        font-size: 1.15rem;
+    .fecha-texto {
+        text-align: center;
     }
-    .programacion-grid {
-        grid-template-columns: 1fr;
+    .datos-evento {
+        gap: 20px;
     }
-    .grid-concursos {
-        grid-template-columns: 1fr;
+    .lista-centros {
+        flex-direction: column;
     }
-    .tarjeta-precios {
-        grid-template-columns: 1fr;
+    .bloques-precios {
+        flex-direction: column;
     }
 }

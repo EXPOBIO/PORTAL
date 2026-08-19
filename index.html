@@ -11,168 +11,183 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="https://files.catbox.moe/zftv8w.png">
     <link rel="shortcut icon" href="https://files.catbox.moe/zftv8w.png">
+    <!--
+        NOTA INTERNA: Samuel H.A. propuso llamarlo "Pokedex" pero le tuvieron
+        miedo al éxito. Nombre final: EXPOBIO (Exposición de Biología).
+    -->
 </head>
 <body>
 
     <!-- HEADER / PORTADA -->
-    <header class="hero">
-        <img class="escudo" src="Logaso.png" alt="Escudo UNSAAC">
-        <h1>EXPOBIO 2026</h1>
-        <p class="hero-sub">VI Exposición de Biología</p>
-        <p class="hero-fecha">21, 22 y 23 de Octubre</p>
-        <p class="hero-lugar">Universidad Nacional San Antonio Abad del Cusco</p>
-        <div class="hero-botones">
-            <a href="https://expobio.github.io/INSCRIPCION/" class="btn-principal">Inscribirme</a>
-            <a href="#informacion" class="btn-secundario">Más información</a>
+    <div class="carta">
+        <div class="box-titulo">
+            <img class="escudo-banner" src="Logaso.png" alt="EXPOBIO 2026 - UNSAAC">
         </div>
-    </header>
+    </div>
+
+    <!-- BOTONES RÁPIDOS -->
+    <div class="carta">
+        <div class="acciones-rapidas">
+            <a href="https://expobio.github.io/INSCRIPCION/" class="btn-principal">Inscribirme</a>
+            <a href="#concursos" class="btn-secundario">Concursos</a>
+            <a href="#inscripciones" class="btn-secundario">Inscripciones</a>
+            <a href="https://expobio.github.io/CONSULTAS/" class="btn-secundario">Consultas</a>
+        </div>
+    </div>
 
     <!-- SOBRE EL EVENTO -->
-    <section class="seccion" id="informacion">
-        <div class="contenedor">
-            <h2 class="seccion-titulo">¿Qué es la EXPOBIO?</h2>
-            <p class="seccion-texto">
-                La EXPOBIO es el evento académico y científico más importante de la Facultad de Ciencias Biológicas de la UNSAAC. 
-                Durante tres días, estudiantes, docentes y profesionales comparten investigaciones, participan en concursos y 
-                fortalecen la comunidad científica de nuestra universidad.
+    <div class="carta">
+        <div class="seccion-contenido">
+            <h2>Sobre la EXPOBIO</h2>
+            <p>
+                La EXPOBIO nació con un propósito claro: <strong>divulgar las investigaciones científicas</strong> y 
+                <strong>promover la investigación</strong>, una de las principales actividades de un biólogo. Con el tiempo, 
+                el evento fue creciendo y incorporando nuevos propósitos.
             </p>
-            <p class="seccion-texto">
-                Este año llega a su <strong>sexta edición</strong> con el objetivo de incrementar la participación estudiantil, 
-                incluir docentes de otras carreras y consolidar espacios de difusión científica presencial.
+            <p>
+                Hoy es un espacio donde centros de investigación comparten sus trabajos, donde nuevos ciclos conocen 
+                la variedad de ramas de la biología, y donde la comunidad universitaria se conecta a través de la ciencia, 
+                la cultura y el conocimiento.
             </p>
+            <div class="datos-evento">
+                <div class="dato-item">
+                    <span class="dato-num">6ta</span>
+                    <span class="dato-label">Edición</span>
+                </div>
+                <div class="dato-item">
+                    <span class="dato-num">8</span>
+                    <span class="dato-label">Centros de Investigación</span>
+                </div>
+                <div class="dato-item">
+                    <span class="dato-num">3</span>
+                    <span class="dato-label">Días de evento</span>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
     <!-- FECHAS CLAVE -->
-    <section class="seccion seccion-oscuro">
-        <div class="contenedor">
-            <h2 class="seccion-titulo">Fechas Clave</h2>
-            <div class="grid-fechas">
-                <div class="tarjeta-fecha">
-                    <span class="fecha-dia">18 Set</span>
-                    <span class="fecha-label">Fin de preventa de inscripciones</span>
+    <div class="carta">
+        <div class="seccion-contenido">
+            <h2>Fechas Clave</h2>
+            <div class="lista-fechas">
+                <div class="fecha-item">
+                    <span class="fecha-fecha">18 de Septiembre</span>
+                    <span class="fecha-texto">Fin de preventa de inscripciones</span>
                 </div>
-                <div class="tarjeta-fecha">
-                    <span class="fecha-dia">30 Set</span>
-                    <span class="fecha-label">Cierre de inscripciones al Biodex</span>
+                <div class="fecha-item">
+                    <span class="fecha-fecha">30 de Septiembre</span>
+                    <span class="fecha-texto">Cierre de inscripciones al Biodex</span>
                 </div>
-                <div class="tarjeta-fecha">
-                    <span class="fecha-dia">09 Oct</span>
-                    <span class="fecha-label">Última fecha para registrar danza, fotografía e ilustración</span>
+                <div class="fecha-item">
+                    <span class="fecha-fecha">09 de Octubre</span>
+                    <span class="fecha-texto">Última fecha para registrar danza, fotografía e ilustración</span>
                 </div>
-                <div class="tarjeta-fecha">
-                    <span class="fecha-dia">17 Oct</span>
-                    <span class="fecha-label">Preliminares del Biodex</span>
+                <div class="fecha-item">
+                    <span class="fecha-fecha">17 de Octubre</span>
+                    <span class="fecha-texto">Preliminares del Biodex</span>
                 </div>
-                <div class="tarjeta-fecha destacada">
-                    <span class="fecha-dia">21–23 Oct</span>
-                    <span class="fecha-label">EXPOBIO 2026</span>
+                <div class="fecha-item fecha-destacada">
+                    <span class="fecha-fecha">21, 22 y 23 de Octubre</span>
+                    <span class="fecha-texto">EXPOBIO 2026 — Universidad Nacional San Antonio Abad del Cusco</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- CONCURSOS -->
-    <section class="seccion">
-        <div class="contenedor">
-            <h2 class="seccion-titulo">Concursos</h2>
-            <div class="grid-concursos">
-                <div class="tarjeta-concurso">
-                    <div class="concurso-icono">🔬</div>
+    <div class="carta" id="concursos">
+        <div class="seccion-contenido">
+            <h2>Concursos</h2>
+            <p class="seccion-desc">
+                La EXPOBIO reúne diversas categorías que combinan ciencia, cultura y conocimiento:
+            </p>
+            <div class="lista-concursos">
+                <div class="concurso-item">
                     <h3>Investigación</h3>
-                    <p>Presentaciones orales y posters científicos. El eje central de la EXPOBIO: dar a conocer las investigaciones que realizan nuestros estudiantes y docentes.</p>
+                    <p>Presentaciones orales y posters científicos. El eje central del evento: dar a conocer las investigaciones que realizan estudiantes y docentes.</p>
                 </div>
-                <div class="tarjeta-concurso">
-                    <div class="concurso-icono">🧬</div>
+                <div class="concurso-item">
                     <h3>Biodex</h3>
-                    <p>Competencia de conocimientos de biología dividida en categorías: Ecología, Laboratorio y Biodex Junior (1er y 2do semestre).</p>
+                    <p>Competencia de conocimientos de biología. Categorías: Ecología, Laboratorio y Biodex Junior (1er y 2do semestre). <em>Nombre elegido después de descartar otras opciones creativas.</em></p>
                 </div>
-                <div class="tarjeta-concurso">
-                    <div class="concurso-icono">📸</div>
+                <div class="concurso-item">
                     <h3>Fotografía</h3>
-                    <p>Concurso de fotografía científica con categorías de flora, fauna y paisaje. Abierto a estudiantes de otras carreras.</p>
+                    <p>Fotografía científica con categorías de flora, fauna y paisaje. Abierto a estudiantes de otras carreras.</p>
                 </div>
-                <div class="tarjeta-concurso">
-                    <div class="concurso-icono">🎨</div>
+                <div class="concurso-item">
                     <h3>Ilustración Científica</h3>
-                    <p>Ilustraciones de flora, fauna y paisaje que acompañan la difusión del conocimiento biológico.</p>
+                    <p>Ilustraciones de flora, fauna y paisaje para la difusión del conocimiento biológico.</p>
                 </div>
-                <div class="tarjeta-concurso">
-                    <div class="concurso-icono">💃</div>
+                <div class="concurso-item">
                     <h3>Danza</h3>
-                    <p>Concurso de danzas quecelebra la riqueza cultural de nuestra región. Ya en su tercera edición.</p>
+                    <p>Concurso de danzas que celebra la riqueza cultural de la región. Ya en su tercera edición.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- CENTROS DE INVESTIGACIÓN -->
-    <section class="seccion seccion-oscuro">
-        <div class="contenedor">
-            <h2 class="seccion-titulo">Centros de Investigación</h2>
-            <p class="seccion-texto">Los centros de investigación son el corazón académico de la EXPOBIO. Cada uno presenta simposios con 4 expositores durante el evento.</p>
-            <div class="grid-centros">
-                <div class="centro-item">CIPHAM</div>
-                <div class="centro-item">CIBIOGEN</div>
-                <div class="centro-item">CIMA</div>
-                <div class="centro-item">INKILL</div>
-                <div class="centro-item">CEINZ</div>
-                <div class="centro-item">VERTEBRATE</div>
-                <div class="centro-item">LIMI</div>
-                <div class="centro-item">CIDES</div>
-            </div>
-            <div class="programacion-grid">
-                <div class="programacion-dia">
+    <div class="carta">
+        <div class="seccion-contenido">
+            <h2>Centros de Investigación</h2>
+            <p class="seccion-desc">Cada centro presenta simposios con 4 expositores durante el evento. Distribuidos en tres días:</p>
+            <div class="lista-centros">
+                <div class="centro-dia">
                     <h3>Miércoles 21</h3>
-                    <p>CIBIOGEN / CIDES</p>
-                    <p>CIMA / CIPHAM</p>
+                    <span class="centro-tag">CIBIOGEN</span>
+                    <span class="centro-tag">CIDES</span>
+                    <span class="centro-tag">CIMA</span>
+                    <span class="centro-tag">CIPHAM</span>
                 </div>
-                <div class="programacion-dia">
+                <div class="centro-dia">
                     <h3>Jueves 22</h3>
-                    <p>VERTEBRATE / LIMI</p>
-                    <p>Actividades especiales</p>
+                    <span class="centro-tag">VERTEBRATE</span>
+                    <span class="centro-tag">LIMI</span>
+                    <span class="centro-label-mono">Actividades especiales</span>
                 </div>
-                <div class="programacion-dia">
+                <div class="centro-dia">
                     <h3>Viernes 23</h3>
-                    <p>INKILL / CEINZ</p>
-                    <p>Premiación y clausura</p>
+                    <span class="centro-tag">INKILL</span>
+                    <span class="centro-tag">CEINZ</span>
+                    <span class="centro-label-mono">Premiación y clausura</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- INSCRIPCIONES -->
-    <section class="seccion">
-        <div class="contenedor">
-            <h2 class="seccion-titulo">Inscripciones</h2>
-            <div class="tarjeta-precios">
-                <div class="precio-grupo">
-                    <h3>Preventa (hasta el 18 de septiembre)</h3>
-                    <div class="precios-flex">
-                        <div class="precio-item">
-                            <span class="precio-monto">S/ 25</span>
-                            <span class="precio-desc">Grupo de 10</span>
+    <div class="carta" id="inscripciones">
+        <div class="seccion-contenido">
+            <h2>Inscripciones</h2>
+            <div class="bloques-precios">
+                <div class="bloque-precio">
+                    <h3>Preventa <span>(hasta el 18 de septiembre)</span></h3>
+                    <div class="precio-opciones">
+                        <div class="opcion-precio">
+                            <span class="monto">S/ 25</span>
+                            <span class="detalle">Grupo de 10</span>
                         </div>
-                        <div class="precio-item">
-                            <span class="precio-monto">S/ 30</span>
-                            <span class="precio-desc">Individual</span>
+                        <div class="opcion-precio">
+                            <span class="monto">S/ 30</span>
+                            <span class="detalle">Individual</span>
                         </div>
                     </div>
                 </div>
-                <div class="precio-grupo">
-                    <h3>Normal (después del 18 de septiembre)</h3>
-                    <div class="precios-flex">
-                        <div class="precio-item">
-                            <span class="precio-monto">S/ 30</span>
-                            <span class="precio-desc">Grupo de 10</span>
+                <div class="bloque-precio">
+                    <h3>Normal <span>(después del 18 de septiembre)</span></h3>
+                    <div class="precio-opciones">
+                        <div class="opcion-precio">
+                            <span class="monto">S/ 30</span>
+                            <span class="detalle">Grupo de 10</span>
                         </div>
-                        <div class="precio-item">
-                            <span class="precio-monto">S/ 35</span>
-                            <span class="precio-desc">Individual</span>
+                        <div class="opcion-precio">
+                            <span class="monto">S/ 35</span>
+                            <span class="detalle">Individual</span>
                         </div>
-                        <div class="precio-item">
-                            <span class="precio-monto">S/ 70</span>
-                            <span class="precio-desc">Docente</span>
+                        <div class="opcion-precio">
+                            <span class="monto">S/ 70</span>
+                            <span class="detalle">Egresado / Profesional</span>
                         </div>
                     </div>
                 </div>
@@ -182,30 +197,31 @@
                 <a href="https://expobio.github.io/INSCRIPCION/guia.html" class="btn-secundario">Guía de pago</a>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- CONSULTAS -->
-    <section class="seccion seccion-oscuro">
-        <div class="contenedor">
-            <h2 class="seccion-titulo">¿Dudas?</h2>
-            <p class="seccion-texto">Si tienes preguntas sobre tu inscripción, el estado de tu pago o cualquier otra consulta, accede al portal de consultas.</p>
+    <div class="carta">
+        <div class="seccion-contenido">
+            <h2>¿Dudas?</h2>
+            <p>
+                Si tienes preguntas sobre tu inscripción, el estado de tu pago o cualquier otra consulta, 
+                accede al portal de consultas.
+            </p>
             <div class="acciones-inscripcion">
                 <a href="https://expobio.github.io/CONSULTAS/" class="btn-principal">Portal de Consultas</a>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="contenedor">
-            <img class="footer-logo" src="Logaso.png" alt="UNSAAC">
-            <p>Facultad de Ciencias Biológicas — Universidad Nacional San Antonio Abad del Cusco</p>
-            <p class="footer-links">
-                <a href="https://expobio.github.io/INSCRIPCION/">Inscripción</a> · 
-                <a href="https://expobio.github.io/CONSULTAS/">Consultas</a>
-            </p>
-        </div>
-    </footer>
+    <div class="carta-footer">
+        <img class="footer-escudo" src="Logaso.png" alt="UNSAAC">
+        <p>Facultad de Ciencias Biológicas — Universidad Nacional San Antonio Abad del Cusco</p>
+        <p class="footer-links">
+            <a href="https://expobio.github.io/INSCRIPCION/">Inscripción</a> · 
+            <a href="https://expobio.github.io/CONSULTAS/">Consultas</a>
+        </p>
+    </div>
 
 </body>
 </html>
