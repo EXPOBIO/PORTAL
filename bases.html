@@ -9,13 +9,19 @@
     <title>EXPOBIO 2026 - Bases</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Galindo&family=Caveat+Brush&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="https://files.catbox.moe/zftv8w.png">
     <link rel="shortcut icon" href="https://files.catbox.moe/zftv8w.png">
 </head>
 <body>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="icono-menu"><span></span><span></span><span></span></span>
+        Menú
+    </button>
+    <div class="menu-overlay"></div>
 
-    <aside class="sidebar">
+
+    <aside class="sidebar" id="menu-principal">
         <p class="sidebar-tagline">Bases oficiales de concursos</p>
         <nav class="sidebar-nav">
             <a href="index.html">Volver al portal</a>
@@ -103,5 +109,6 @@
             <a href="https://expobio.github.io/INSCRIPCION/" class="btn-principal">Inscribirme</a>
         </div>
     </main>
+    <script src="menu.js"></script>
 </body>
 </html>
