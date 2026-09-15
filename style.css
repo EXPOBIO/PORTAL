@@ -656,6 +656,37 @@ body {
     line-height: 1.3;
 }
 
+/* ====== Blur en cajas principales ====== */
+/* Añade profundidad sin cambiar la estructura existente */
+.seccion,
+.concurso-item,
+.centro-dia,
+.dato-item,
+.banner,
+.bloque-precio,
+.base-item,
+.galeria-hueco,
+.desplegable {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+
+@media (max-width: 640px) {
+    /* reducir blur en pantallas pequeñas por rendimiento */
+    .seccion,
+    .concurso-item,
+    .centro-dia,
+    .dato-item,
+    .banner,
+    .bloque-precio,
+    .base-item,
+    .galeria-hueco,
+    .desplegable {
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+    }
+}
+
 /* BASES */
 .bases-grid {
     display: grid;
