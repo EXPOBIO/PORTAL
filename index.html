@@ -1,208 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <base target="_top">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EXPOBIO 2026: VI Convencion Anual de Estudiantes de Biologia del Cusco. Inscripciones, concursos, centros de investigacion y fechas clave. 21 al 23 de octubre, UNSAAC.">
-    <link rel="stylesheet" href="style.css">
-    <title>EXPOBIO 2026 - Portal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Galindo&family=Caveat+Brush&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://files.catbox.moe/zftv8w.png">
-    <link rel="shortcut icon" href="https://files.catbox.moe/zftv8w.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="EXPOBIO 2026: VI Convencion Anual de Estudiantes de Biologia del Cusco - UNSAAC. 21 al 23 de octubre, Facultad de Ciencias Biologicas.">
+<title>EXPOBIO 2026 - Portal</title>
+<link rel="icon" type="image/png" sizes="32x32" href="https://files.catbox.moe/zftv8w.png">
+<link rel="shortcut icon" href="https://files.catbox.moe/zftv8w.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
-        <span class="icono-menu"><span></span><span></span><span></span></span>
-        Menú
-    </button>
-    <div class="menu-overlay"></div>
 
+<nav>
+    <a href="index.html" class="nav-logo">EXPO<span class="accent">BIO</span> 2026</a>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="bases.html">Bases</a></li>
+        <li><a href="consultas.html">Preguntas</a></li>
+        <li><a href="https://expobio.github.io/CONSULTAS/">Estado</a></li>
+        <li><a href="https://expobio.github.io/INSCRIPCION/" class="nav-cta">Inscribirme</a></li>
+    </ul>
+</nav>
 
-    <aside class="sidebar" id="menu-principal">
-        <p class="sidebar-tagline">Comprender la vida, impulsar la ciencia, construir el futuro.</p>
+<header class="hero">
+    <p class="hero-eyebrow">Convencion estudiantil de biologia</p>
+    <h1 class="hero-title">EXPO<span class="accent">BIO</span> 2026</h1>
+    <p class="hero-desc">Ciencia, concursos y comunidad estudiantil en la VI Convencion Anual de Estudiantes de Biologia del Cusco, organizada por la Escuela Profesional de Biologia de la UNSAAC.</p>
+    <div class="hero-meta"><strong>21-23 OCT</strong><span>·</span><span>Fac. Ciencias Biologicas</span><span>·</span><span>Cusco, Peru</span></div>
+    <div class="hero-actions">
+        <a href="https://expobio.github.io/INSCRIPCION/" class="btn btn-primary">Inscribirme ahora</a>
+        <a href="bases.html" class="btn btn-outline">Ver concursos</a>
+        <a href="https://expobio.github.io/CONSULTAS/" class="btn btn-outline">Estado de inscripcion</a>
+    </div>
+</header>
 
-        <nav class="sidebar-nav">
-            <a href="#sobre" class="activo"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg></span>Sobre EXPOBIO</a>
-            <a href="#fechas"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4"></path><path d="M8 2v4"></path><path d="M3 10h18"></path></svg></span>Fechas Clave</a>
-            <a href="#concursos"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l2.09 6.26L20 9l-5 3.64L16.18 20 12 16.9 7.82 20 9 12.64 4 9l5.91-.74L12 2z"></path></svg></span>Concursos</a>
-            <a href="#centros"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l7 4v6c0 5-7 10-7 10s-7-5-7-10V6l7-4z"></path><path d="M12 7v5"></path></svg></span>Centros de Investigacion</a>
-            <a href="#inscripciones"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></span>Inscripciones</a>
-        </nav>
+<div class="stats">
+    <div class="stat-cell"><span class="stat-num">6ta</span><span class="stat-label">Edicion</span></div>
+    <div class="stat-cell"><span class="stat-num">7</span><span class="stat-label">Concursos</span></div>
+    <div class="stat-cell"><span class="stat-num">3</span><span class="stat-label">Dias</span></div>
+    <div class="stat-cell"><span class="stat-num">8</span><span class="stat-label">Centros</span></div>
+</div>
 
-        <a href="https://expobio.github.io/INSCRIPCION/" class="btn-sidebar btn-sidebar-principal pulse">Inscribirme</a>
-        <a href="bases.html" class="btn-sidebar btn-sidebar-secundario">Bases de concursos</a>
-        <a href="consultas.html" class="btn-sidebar btn-sidebar-secundario">Preguntas frecuentes</a>
-        <a href="https://expobio.github.io/CONSULTAS/" class="btn-sidebar btn-sidebar-secundario">Estado de inscripcion</a>
+<section class="section" id="secciones">
+    <div class="section-head">
+        <span class="section-tag">navegar</span>
+        <h2>Explora el evento</h2>
+        <p>Todo lo que necesitas para participar</p>
+    </div>
+    <div class="link-grid">
+        <a href="https://expobio.github.io/INSCRIPCION/" class="link-card">
+            <span class="card-icon">🧬</span>
+            <div class="card-title">Inscripciones</div>
+            <p class="card-desc">Registrate como estudiante, grupo de 10, egresado o profesional. Precios en preventa y normal.</p>
+            <span class="card-meta">Inscribirme ›</span>
+        </a>
+        <a href="bases.html" class="link-card">
+            <span class="card-icon">🏆</span>
+            <div class="card-title">Concursos</div>
+            <p class="card-desc">Exposicion oral, poster cientifico, fotografia, ilustracion, danza, Biodex y Biodex Junior.</p>
+            <span class="card-meta">Ver bases ›</span>
+        </a>
+        <a href="https://expobio.github.io/CONSULTAS/" class="link-card">
+            <span class="card-icon">📋</span>
+            <div class="card-title">Estado de inscripcion</div>
+            <p class="card-desc">Consulta el estado de tu inscripcion y comprobante por DNI.</p>
+            <span class="card-meta">Consultar ›</span>
+        </a>
+        <a href="consultas.html" class="link-card">
+            <span class="card-icon">💬</span>
+            <div class="card-title">Preguntas frecuentes</div>
+            <p class="card-desc">Resuelve dudas sobre precios, fechas, concursos y logistica del evento.</p>
+            <span class="card-meta">Leer FAQ ›</span>
+        </a>
+    </div>
+</section>
 
-        <hr class="sidebar-divider">
-        <p class="sidebar-contacto">expobio.unsaac@gmail.com</p>
-        <div class="sidebar-redes">
-            <a href="https://web.facebook.com/ExpobioCuscoUNSAAC/" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/expobio.cusco/" target="_blank">Instagram</a>
-            <a href="https://www.tiktok.com/@expobio_2026" target="_blank">TikTok</a>
+<section class="section" id="lugar">
+    <div class="section-head">
+        <span class="section-tag">ubicacion</span>
+        <h2>Como llegar</h2>
+    </div>
+    <div class="lugar">
+        <div class="lugar-card">
+            <h3>Facultad de Ciencias Biologicas</h3>
+            <p>Universidad Nacional San Antonio Abad del Cusco.</p>
+            <p>Cusco, Peru.</p>
+            <p><a href="mailto:expobio.unsaac@gmail.com">expobio.unsaac@gmail.com</a></p>
         </div>
-    </aside>
-
-    <main class="main">
-
-        <div class="banner">
-            <img class="banner-img" src="Logaso.png" alt="EXPOBIO 2026 - UNSAAC">
-            <span class="banner-sub">Facultad de Ciencias Biologicas &mdash; UNSAAC</span>
+        <div class="mapa-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.34!2d-71.9593157!3d-13.5215013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd6075feb1679%3A0x8da20054f1f9bc47!2sFacultad%20de%20Ciencias%20Biol%C3%B3gicas%20-%20UNSAAC!5e0!3m2!1ses!2spe!4v1755500000000!5m2!1ses!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa - Facultad de Ciencias Biologicas UNSAAC"></iframe>
         </div>
+    </div>
+</section>
 
-        <details class="hero-plegado">
-            <summary class="hero-toggle">Sobre la EXPOBIO</summary>
-            <div class="hero-contenido">
-                <p>La VI Convencion Anual de Estudiantes de Biologia del Cusco reune a estudiantes, docentes, investigadores y profesionales unidos por una misma pasion: comprender la vida, impulsar la ciencia y construir soluciones para los desafios del futuro.</p>
-                <div class="datos-rapidos">
-                    <div class="dato-item"><span class="dato-num">6ta</span><span class="dato-label">EDICION</span></div>
-                    <div class="dato-item"><span class="dato-num">8</span><span class="dato-label">CENTROS</span></div>
-                    <div class="dato-item"><span class="dato-num">3</span><span class="dato-label">DIAS</span></div>
-                    <div class="dato-item"><span class="dato-num">7</span><span class="dato-label">CONCURSOS</span></div>
-                </div>
-            </div>
-        </details>
+<footer>
+    <div class="footer-redes">
+        <a href="https://web.facebook.com/ExpobioCuscoUNSAAC/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/expobio.cusco/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@expobio_2026" target="_blank" rel="noopener">TikTok</a>
+    </div>
+    <p class="footer-contacto"><a href="mailto:expobio.unsaac@gmail.com">expobio.unsaac@gmail.com</a></p>
+    <p class="footer-line"><strong>EXPOBIO 2026</strong> · Escuela Profesional de Biologia · UNSAAC · Cusco</p>
+</footer>
 
-        <section class="seccion" id="fechas">
-            <h2>Fechas Clave</h2>
-            <div class="lista-fechas">
-                <div class="fecha-item"><span class="fecha-fecha">18 SEP</span><span class="fecha-texto">Fin de preventa de inscripciones</span></div>
-                <div class="fecha-item"><span class="fecha-fecha">30 SEP</span><span class="fecha-texto">Cierre de inscripciones Biodex y Biodex Junior</span></div>
-                <div class="fecha-item"><span class="fecha-fecha">02 OCT</span><span class="fecha-texto">Sorteo de tematica del Biodex Junior</span></div>
-                <div class="fecha-item"><span class="fecha-fecha">09 OCT</span><span class="fecha-texto">Ultima fecha: danza, fotografia e ilustracion</span></div>
-                <div class="fecha-item"><span class="fecha-fecha">17 OCT</span><span class="fecha-texto">Preliminares del Biodex y Biodex Junior</span></div>
-                <div class="fecha-item fecha-destacada"><span class="fecha-fecha">21-23 OCT</span><span class="fecha-texto">EXPOBIO 2026 - Facultad de Ciencias Biologicas, UNSAAC</span></div>
-            </div>
-        </section>
-
-        <section class="seccion" id="concursos">
-            <h2>Concursos</h2>
-            <p style="margin-bottom:12px">La participacion no tiene costo adicional. Solo necesitas estar inscrito en EXPOBIO 2026.</p>
-            <div class="lista-concursos">
-                <div class="concurso-item concurso-destacado">
-                    <span class="etiqueta-num">CAT. 01</span>
-                    <h3>Exposicion Oral</h3>
-                    <p>Comparte una investigacion o aporte al conocimiento biologico y demuestra tu capacidad para comunicar ciencia.</p>
-                </div>
-                <div class="concurso-item">
-                    <span class="etiqueta-num">CAT. 02</span>
-                    <h3>Poster Cientifico</h3>
-                    <p>Presenta tu trabajo de investigacion de manera clara, visual y cientifica.</p>
-                </div>
-                <div class="concurso-item">
-                    <span class="etiqueta-num">CAT. 03</span>
-                    <h3>Fotografia</h3>
-                    <p>Captura la diversidad biologica. Categorias: flora, fauna y paisaje.</p>
-                </div>
-                <div class="concurso-item">
-                    <span class="etiqueta-num">CAT. 04</span>
-                    <h3>Ilustracion Cientifica</h3>
-                    <p>Representa la biodiversidad a traves del arte y la comunicacion visual.</p>
-                </div>
-                <div class="concurso-item">
-                    <span class="etiqueta-num">CAT. 05</span>
-                    <h3>Danza</h3>
-                    <p>Celebra nuestra diversidad cultural y las expresiones tradicionales de la region.</p>
-                </div>
-                <div class="concurso-item concurso-destacado">
-                    <span class="etiqueta-num">CAT. 06</span>
-                    <h3>Biodex</h3>
-                    <p>Conocimientos de biologia. Tematica 2026: Areas Naturales Protegidas del Cusco. Equipos de 4.</p>
-                </div>
-                <div class="concurso-item">
-                    <span class="etiqueta-num">CAT. 07</span>
-                    <h3>Biodex Junior</h3>
-                    <p>Para estudiantes de 1er y 2do semestre. Tematica sortead el 2 de octubre.</p>
-                </div>
-            </div>
-            <div class="acciones"><a href="bases.html" class="btn-secundario">Ver bases oficiales</a></div>
-        </section>
-
-        <section class="seccion" id="centros">
-            <h2>Centros de Investigacion</h2>
-            <p style="margin-bottom:12px">Cada centro presenta conferencias simultaneas con 4 expositores.</p>
-            <div class="lista-centros">
-                <div class="centro-dia">
-                    <h3>Miercoles 21</h3>
-                    <span class="centro-tag">CIBIOGEN</span><span class="centro-tag">CIDES</span><span class="centro-tag">CIMA</span><span class="centro-tag">CIPHAM</span>
-                </div>
-                <div class="centro-dia">
-                    <h3>Jueves 22</h3>
-                    <span class="centro-tag">VERTEBRATE</span><span class="centro-tag">LIMI</span><span class="centro-tag">ECOTAXON</span>
-                    <span class="centro-label-mono">Actividades especiales</span>
-                </div>
-                <div class="centro-dia">
-                    <h3>Viernes 23</h3>
-                    <span class="centro-tag">INKILL</span><span class="centro-tag">CEINZ</span>
-                    <span class="centro-label-mono">Premiacion y clausura</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="seccion">
-            <h2>Ediciones Anteriores</h2>
-            <div class="galeria-grid">
-                <div class="galeria-hueco"><span>FOTO<br>Ceremonia<br>de apertura</span></div>
-                <div class="galeria-hueco"><span>FOTO<br>Final del<br>Biodex</span></div>
-                <div class="galeria-hueco"><span>FOTO<br>Exposicion<br>de posters</span></div>
-                <div class="galeria-hueco"><span>FOTO<br>Danza<br>tradicional</span></div>
-            </div>
-        </section>
-
-        <section class="seccion" id="inscripciones">
-            <h2>Inscripciones</h2>
-            <details class="desplegable" open>
-                <summary>Preventa &mdash; Hasta el 18 de septiembre</summary>
-                <div class="desplegable-cuerpo">
-                    <div class="precios-lateral">
-                        <div class="bloque-precio">
-                            <div class="precio-linea"><span class="precio-monto">S/ 25</span><span class="precio-detalle">Grupo de 10</span></div>
-                            <div class="precio-linea"><span class="precio-monto">S/ 30</span><span class="precio-detalle">Individual</span></div>
-                            <div class="precio-linea"><span class="precio-monto">S/ 60</span><span class="precio-detalle">Profesional</span></div>
-                        </div>
-                    </div>
-                </div>
-            </details>
-            <details class="desplegable">
-                <summary>Normal &mdash; Despues del 18 de septiembre</summary>
-                <div class="desplegable-cuerpo">
-                    <div class="precios-lateral">
-                        <div class="bloque-precio">
-                            <div class="precio-linea"><span class="precio-monto">S/ 30</span><span class="precio-detalle">Grupo de 10</span></div>
-                            <div class="precio-linea"><span class="precio-monto">S/ 35</span><span class="precio-detalle">Individual</span></div>
-                            <div class="precio-linea"><span class="precio-monto">S/ 60</span><span class="precio-detalle">Profesional</span></div>
-                        </div>
-                    </div>
-                </div>
-            </details>
-            <p class="nota-precio">Los egresados de los semestres 25-I, 25-II y 26-I se les considera dentro del precio de estudiantes.</p>
-            <div class="acciones">
-                <a href="https://expobio.github.io/INSCRIPCION/" class="btn-principal pulse">Inscribirme ahora</a>
-                <a href="https://expobio.github.io/INSCRIPCION/guia.html" class="btn-secundario">Guia de pago</a>
-            </div>
-        </section>
-
-        <section class="seccion">
-            <h2>Consultas</h2>
-            <p>Si tienes preguntas generales revisa las <strong>preguntas frecuentes</strong>. Para verificar tu inscripcion o pago usa el <strong>portal de consultas</strong>.</p>
-            <div class="acciones">
-                <a href="consultas.html" class="btn-secundario">Preguntas frecuentes</a>
-                <a href="https://expobio.github.io/CONSULTAS/" class="btn-secundario">Estado de inscripcion</a>
-            </div>
-        </section>
-
-        <section class="seccion">
-            <h2>Como llegar</h2>
-            <p style="margin-bottom:12px">Facultad de Ciencias Biologicas - Universidad Nacional San Antonio Abad del Cusco.</p>
-            <div class="mapa-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.34!2d-71.9593157!3d-13.5215013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd6075feb1679%3A0x8da20054f1f9bc47!2sFacultad%20de%20Ciencias%20Biol%C3%B3gicas%20-%20UNSAAC!5e0!3m2!1ses!2spe!4v1755500000000!5m2!1ses!2spe" width="100%" height="280" style="border:0;border-radius:10px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-
-    </main>
-    <script src="menu.js"></script>
 </body>
 </html>
